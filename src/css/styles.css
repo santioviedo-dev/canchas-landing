@@ -1,0 +1,81 @@
+.navbar-nav > li > a > span {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-nav > li > a {
+  overflow: hidden;
+}
+
+.navbar-nav > li > a > span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: rgb(248, 249, 250);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav > li > a:hover > span::after {
+  width: 100%;
+}
+
+.reservation-btn {
+  overflow: hidden;
+  position: relative;
+  transition: color 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.reservation-btn:hover {
+  color: #212529 !important;
+}
+.reservation-btn::before {
+  content: "";
+  background-color: rgb(248, 249, 250);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -30%;
+  transform-origin: right; /* Origen de la transformación en la derecha */
+  transform: skewX(-30deg); /* Inclinación del lado derecho */
+  transition: width 0.5s ease-in-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.reservation-btn:hover::before {
+  width: 150%;
+  clip-path: none;
+}
+
+
+
+/* NAVBAR */
+
+
+.show-navbar {
+  width: 100vw;
+  height: 100vh;
+  
+  z-index: -1;
+  background: #212529;
+  display: grid !important;
+  place-content: center;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-collapse {
+    display: none;
+    position: initial;
+  }
+}
+
+
