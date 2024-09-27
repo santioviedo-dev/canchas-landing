@@ -52,15 +52,12 @@
   clip-path: none;
 }
 
-
-
 /* NAVBAR */
-
 
 .show-navbar {
   width: 100vw;
   height: 100vh;
-  
+
   z-index: -1;
   background: #212529;
   display: grid !important;
@@ -76,6 +73,10 @@
     display: none;
     position: initial;
   }
+  .navbar {
+    mask-image: none !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
 }
-
-
