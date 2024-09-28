@@ -37,16 +37,6 @@
         );
       "
     ></div>
-    <!-- <div
-      class="position-absolute top-0 z-index-n2 h-100 w-100 bg-dark"
-      style="
-        background: radial-gradient(
-          ellipse 80% 80% at 50% -20%,
-          rgba(120, 119, 198, 0.3),
-          rgba(255, 255, 255, 0)
-        );
-      "
-    ></div> -->
 
     <div
       class="w-100 vh-100 d-flex flex-column"
@@ -57,7 +47,7 @@
       <!-- NAVBAR -->
       <div class="container">
         <nav
-          class="navbar fixed-top navbar-expand-lg navbar-dark"
+          class="navbar pt-0 fixed-top navbar-expand-lg navbar-dark"
           style="
             mask-image: linear-gradient(black 80%, transparent 100%);
             background: rgba(0, 0, 0, 0.2);
@@ -143,7 +133,7 @@
           <h2 class="fs-3">¿Por qué nos eligen nuestros clientes?</h2>
           <p class="text-muted">Descubre las razones que nos hacen destacar.</p>
         </div>
-        <div class="row w-100 mt-5">
+        <div class="row w-100 mt-4">
           <div class="d-none d-lg-block col-md-6">
             <div class="row align-items-end justify-content-center">
               <img
@@ -296,7 +286,66 @@
           </div>
         </div>
       </section>
-      <section class="mt-5"></section>
+      <div class="w-100" style="height: 128px"></div>
+      <section class="row">
+        <h2 class="fs-3 text-center">Nuestras canchas</h2>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide mt-4 col-12 col-lg-7 m-auto"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/src/assets/img/carousel-1.jpg"
+                class="d-block w-100"
+                alt="Imagen de una cancha de fútbol"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/src/assets/img/carousel-2.jpg"
+                class="d-block w-100"
+                alt="Imágen de una cancha de fútbol"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/src/assets/img/carousel-3.jpg"
+                class="d-block w-100"
+                alt="Imágen de una cancha de fútbol"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/src/assets/img/carousel-4.jpg"
+                class="d-block w-100"
+                alt="Imágen de una cancha de fútbol"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <div class="w-100" style="height: 128px"></div>
+      <section></section>
     </main>
 
     <script
