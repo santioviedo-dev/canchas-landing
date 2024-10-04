@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Entre amigos - Página principal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+  </head>
+  <body
+    style="
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    "
+  >
+    <!-- BACKGROUND -->
+    <div
+      class="position-fixed top-0 h-100 w-100 bg-dark"
+      style="
+        z-index: -1;
+        background: radial-gradient(
+          ellipse 80% 80% at 50% -20%,
+          rgba(120, 119, 198, 0.3),
+          rgba(255, 255, 255, 0)
+        );
+      "
+    ></div>
+
+    <div
+      class="w-100 vh-100 d-flex flex-column"
+      style="
+        background: url('/src/assets/img/contact-img.jpg') no-repeat
+          center/cover;
+      "
+    >
+      <!-- NAVBAR -->
+      <div class="container">
+        <nav
+          class="navbar pt-0 fixed-top navbar-expand-lg navbar-dark"
+          style="
+            mask-image: linear-gradient(black 80%, transparent 100%);
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+          "
+        >
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              style="z-index: 9999999"
+              id="my-navbar-toggler"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse justify-content-center">
+              <ul
+                class="navbar-nav m-auto w-75 align-items-center justify-content-md-around text-center gap-1"
+              >
+                <li class="nav-item">
+                  <a
+                    class="navbar-brand nav-link m-0"
+                    style="transition: none; border: none"
+                    href="/index.html"
+                    ><img
+                      src="/src/assets/img/light-logo.png"
+                      style="width: 48px"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="/index.html#home"
+                    ><span>Inicio</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/pages/about.html"
+                    ><span>Sobre nosotros</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/pages/fields.html"
+                    ><span>Canchas</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    href="/pages/contact.html"
+                    role="button"
+                  >
+                    <span>Contacto</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/pages/faq.html"
+                    ><span>Preguntas frecuentes</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- HEADER -->
+      <div
+        class="w-100 h-100 d-flex justify-content-lg-end align-items-center"
+        id="home"
+        style="
+          background: rgba(0, 0, 0, 0.3);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+        "
+      >
+        <div class="container text-light d-flex justify-content-lg-end">
+          <div
+            class="card border-light"
+            style="
+              width: 20rem;
+              background: rgba(0, 0, 0, 0.2);
+              backdrop-filter: blur(10px);
+              -webkit-backdrop-filter: blur(10px);
+            "
+          >
+            <div class="card-body">
+              <h2 class="card-title fs-3 text-light">
+                ¡Contáctanos para saber más!
+              </h2>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Escribinos para conocer más sobre nuestras canchas y tarifas.
+              </h6>
+              <div class="mt-3">
+                <div class="d-flex gap-2 mb-3">
+                  <div
+                    class="col-2 border border-light d-flex rounded justify-content-center align-items-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <svg
+                      width="32"
+                      height="28"
+                      viewBox="0 0 32 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#filter0_d_259_76)">
+                        <path
+                          d="M5.25439 7.36382C5.25439 5.72671 6.58153 4.39957 8.21864 4.39957H23.781C25.4181 4.39957 26.7452 5.72671 26.7452 7.36382V19.1287C26.7452 20.7658 25.4181 22.0929 23.781 22.0929H8.21864C6.58153 22.0929 5.25439 20.7658 5.25439 19.1287L5.25439 7.36382Z"
+                          fill="white"
+                          stroke="#6D758F"
+                          stroke-width="1.23077"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M6.39938 4.99706L14.6073 12.3675C15.396 13.0757 16.5945 13.0663 17.3721 12.3458L25.3024 4.99706"
+                          fill="#B4B9C9"
+                        />
+                        <path
+                          d="M6.39938 5.18035L14.6073 12.5508C15.396 13.259 16.5945 13.2496 17.3721 12.5291L25.3024 5.18035"
+                          stroke="#6D758F"
+                          stroke-width="1.23077"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <filter
+                          id="filter0_d_259_76"
+                          x="0.63916"
+                          y="0.78418"
+                          width="30.7212"
+                          height="26.9241"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          />
+                          <feColorMatrix
+                            in="SourceAlpha"
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha"
+                          />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix
+                            type="matrix"
+                            values="0 0 0 0 0.0969792 0 0 0 0 0.127894 0 0 0 0 0.2375 0 0 0 0.08 0"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in2="BackgroundImageFix"
+                            result="effect1_dropShadow_259_76"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="effect1_dropShadow_259_76"
+                            result="shape"
+                          />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="col-10">
+                    <span>Correo:</span>
+                    <span class="d-block fw-semibold"
+                      >entreamigos@gmail.com</span
+                    >
+                  </div>
+                </div>
+                <div class="d-flex gap-2 mb-3">
+                  <div
+                    class="col-2 border border-light d-flex rounded justify-content-center align-items-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <svg
+                      width="32"
+                      height="31"
+                      viewBox="0 0 32 31"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#filter0_d_259_192)">
+                        <path
+                          d="M11.5 3.96679H7.40909C6.35473 3.96679 5.5 4.82152 5.5 5.87588C5.5 16.4195 14.0473 24.9668 24.5909 24.9668C25.6452 24.9668 26.5 24.112 26.5 23.0577V18.9667L22.0001 15.9668L19.6666 18.3001C19.2614 18.7055 18.6557 18.8315 18.1465 18.5685C17.2829 18.1222 15.8814 17.284 14.5 15.9668C13.0856 14.6181 12.2569 13.1649 11.841 12.2857C11.6079 11.7928 11.7428 11.224 12.1283 10.8385L14.5 8.46679L11.5 3.96679Z"
+                          fill="white"
+                          stroke="#6D758F"
+                          stroke-width="1.23077"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7.40918 3.96679H11.5001L14.5001 8.46679L12.1284 10.8385L7.40918 3.96679Z"
+                          fill="#B4B9C9"
+                          stroke="#6D758F"
+                          stroke-width="1.23077"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M26.4999 23.0577C26.4999 24.112 25.6451 24.9668 24.5908 24.9668L19.6665 18.3001L22 15.9668L26.4999 18.9667V23.0577Z"
+                          fill="#B4B9C9"
+                          stroke="#6D758F"
+                          stroke-width="1.23077"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <filter
+                          id="filter0_d_259_192"
+                          x="0.884766"
+                          y="0.35141"
+                          width="30.2305"
+                          height="30.2308"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          />
+                          <feColorMatrix
+                            in="SourceAlpha"
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha"
+                          />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix
+                            type="matrix"
+                            values="0 0 0 0 0.0969792 0 0 0 0 0.127894 0 0 0 0 0.2375 0 0 0 0.08 0"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in2="BackgroundImageFix"
+                            result="effect1_dropShadow_259_192"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="effect1_dropShadow_259_192"
+                            result="shape"
+                          />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="col-10">
+                    <span>Teléfono:</span>
+                    <span class="d-block fw-semibold">376 450 9714</span>
+                  </div>
+                </div>
+                <div class="d-flex gap-2 mb-1">
+                  <div
+                    class="col-2 border border-light d-flex rounded justify-content-center align-items-center"
+                    style="width: 48px; height: 48px"
+                  >
+                    <svg
+                      width="24"
+                      height="27"
+                      viewBox="0 0 24 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.64102 4.45305C8.70527 0.388804 15.2947 0.388804 19.359 4.45305C23.4232 8.5173 23.4232 15.1068 19.359 19.171L12.3074 26.2226C12.1376 26.3924 11.8624 26.3923 11.6926 26.2226L4.64103 19.171C0.576778 15.1068 0.576776 8.5173 4.64102 4.45305Z"
+                        fill="white"
+                        stroke="#6D758F"
+                        stroke-width="1.23"
+                      />
+                      <circle
+                        cx="12.1875"
+                        cy="11.6855"
+                        r="3.53125"
+                        fill="#B4B9C9"
+                        stroke="#6D758F"
+                      />
+                    </svg>
+                  </div>
+                  <div class="col-10">
+                    <span>Dirección:</span>
+                    <span class="d-block fw-semibold"
+                      >Av. Las Américas 8723</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/src/js/navbar.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
